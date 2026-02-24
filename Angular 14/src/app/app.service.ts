@@ -1,13 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
-import { HashLocationStrategy } from '@angular/common';
 
-@Injectable()
-
+@Injectable({ providedIn: 'root' })
 export class appService {
 
-    private authUrl!: string;
-    private getDashboardsUrl!: string;
     private header!: HttpHeaders;
 
     constructor(private http: HttpClient) {
@@ -22,8 +18,6 @@ export class appService {
 
         return this.http.post(dashboardServerApiUrl + '/get-user-key', body, {
             headers: this.header,
-        }).pipe(res => {
-            return <any>res;
         });
     }
 
@@ -34,15 +28,11 @@ export class appService {
 
         return this.http.get(getDashboardsUrl, {
             headers: this.header
-        }).pipe(res => {
-            return <any>res;
         });
     }
 
     public GetEmbedConfig(getDashboardsUrl: string) {
         return this.http.get(getDashboardsUrl, {
-        }).pipe(res => {
-            return <any>res;
         });
     }
 }
