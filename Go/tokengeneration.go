@@ -95,32 +95,6 @@ func tokenGeneration(w http.ResponseWriter, r *http.Request) {
         "dashboard": map[string]string{
             "id": dashboardId,
         },
-        "datasourcefilters": []map[string]interface{}{
-        // {
-        //     "name":     "Region",
-        //     "value":    []string{"North", "East"},
-        //     "operator": "NOT IN",
-        // },
-        {
-            "name":     "Region",
-            "value":    "Central",
-            "operator": "",
-        },
-    },
-    "dashboardparameters ": []map[string]interface{}{
-        {
-            "name":     "CustomerId",
-            "value":    []int{1001, 1002},
-            "operator": "NOT IN",
-        },
-    },
-        "customattributes": []map[string]interface{}{
-        {
-            "name":     "sales_analysis_db",
-            "value":    "gamma_industries_sales_analysis",
-            "operator": "",
-        },
-    },
     }
 
     payload, err := json.Marshal(embedDetails)

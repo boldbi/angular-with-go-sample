@@ -24,7 +24,7 @@ import { appService } from './app.service';
     public getEmbedConfigUrl = "/getdetails";
 
     public embedConfig: any;
-      
+    
     public dashboards: any;
   
     public baseUrl: any;
