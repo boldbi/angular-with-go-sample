@@ -12,11 +12,11 @@ This Bold BI Angular with Go sample contains the Dashboard embedding sample. In 
 * [Node.js](https://nodejs.org/en/)
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
- > **NOTE:** Node.js v14.16 to v18.18 are supported.
+ > **NOTE:** Node.js version supported from v20.20.
 
 ### Supported browsers
   
-* Google Chrome, Microsoft Edge, Mozilla Firefox.
+* Google Chrome, Microsoft Edge, and Mozilla Firefox.
 
 ## Configuration
 
@@ -37,9 +37,9 @@ This Bold BI Angular with Go sample contains the Dashboard embedding sample. In 
 
   1. Open the **command line interface** and navigate to the specified file [location](https://github.com/boldbi/angular-with-go-sample/tree/master/Go) where the project is located.
 
-  2. Run the back-end `Go` sample by using the following command `go run main.go`.
+  2. Run the back-end `Go` sample by using the following command `go run tokengeneration.go`.
 
-  3. Open the **command line interface** and navigate to the specified file [location](https://github.com/boldbi/angular-with-go-sample/tree/master/Angular-14) where the project is located.
+  3. Open the **command line interface** and navigate to the specified file [location](https://github.com/boldbi/angular-with-go-sample/tree/master/Angular) where the project is located.
 
   4. Install all dependent packages by executing the following command `npm install`.
 
@@ -55,7 +55,7 @@ This Bold BI Angular with Go sample contains the Dashboard embedding sample. In 
 
 * Open the `Go` sample in **Visual Studio Code.**
 
-* Run the back-end `Go` sample by using the following command in the terminal `go run main.go`.
+* Run the back-end `Go` sample by using the following command in the terminal `go run tokengeneration.go`.
 
 * Open the `Angular` sample in a new window of **Visual Studio Code.**
 
